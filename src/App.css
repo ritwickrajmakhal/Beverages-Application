@@ -29,3 +29,8 @@ body::before {
   backdrop-filter: blur(5px);
   z-index: -1;
 }
+
+.btn-primary:hover{
+  background-color: rgb(212, 230, 165);
+  color: black;
+}

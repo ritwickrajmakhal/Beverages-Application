@@ -5,6 +5,7 @@ import About from "./components/About";
 import Home from "./components/Home";
 import "./App.css";
 import CocktailDetails from "./components/CocktailDetails";
+import ErrorPage from "./components/ErrorPage";
 
 // Layout component to wrap Navbar with routing pages
 const Layout = () => (
@@ -30,8 +31,9 @@ const router = createBrowserRouter([
       {
         path: "/cocktail/:id",
         element: <CocktailDetails />,
-      }
+      },
     ],
+    errorElement: <ErrorPage msg={"No cocktail to display"}/>,
   },
 ]);
 

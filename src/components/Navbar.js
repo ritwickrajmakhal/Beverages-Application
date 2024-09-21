@@ -21,7 +21,7 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0"></ul>
-          <form className="d-flex" role="search">
+          <div className="d-flex">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <Link className="nav-link nav-links active" aria-current="page" to={"/"}>
@@ -34,7 +34,7 @@ const Navbar = () => {
                 </Link>
               </li>
             </ul>
-          </form>
+          </div>
         </div>
       </div>
     </nav>
